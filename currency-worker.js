@@ -13,7 +13,7 @@ var MongoClient = require('mongodb').MongoClient;
 MongoClient.connect("mongodb://localhost:27017/currency", function(err, db) {
     if(err) {
         console.log("cannot connect to mongodb, aborted.");
-        console.log(err);
+        console.log(JSON.stringify(err));
         return;
     }
 

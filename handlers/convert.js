@@ -87,7 +87,7 @@ module.exports = function() {
                 
                     if(err) {
                         console.log('findAndModify error on reput_success, abort');
-                        console.log(err);
+                        console.log(JSON.stringify(err));
                         process.exit(1);
                     }
 
@@ -125,7 +125,7 @@ module.exports = function() {
                 
                     if(err) {
                         console.log('findAndModify error on reput_fail, abort');
-                        console.log(err);
+                        console.log(JSON.stringify(err));
                         process.exit(1);
                     }
 
