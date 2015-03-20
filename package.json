@@ -1,0 +1,26 @@
+{
+	"name": "ROLSFpBqYkWhQabxqVW3sA",
+	"description": "Worker to get the currency exchange rate from xe.com.",
+	"version": "0.1.0",
+	"private": false,
+	"author": "https://github.com/marcohk/ROLSFpBqYkWhQabxqVW3sA/contributors",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/marcohk/ROLSFpBqYkWhQabxqVW3sA.git"
+	},
+	"engines": {
+		"node": "0.10.x",
+		"npm": "1.4.x"
+	},
+	"scripts": {
+		"start": "grunt",
+		"test": "grunt test"
+	},
+	"dependencies": {
+		"cheerio": "~0.18.0",
+		"request": "~2.53.0",
+		"fivebeans": "~1.1.1",
+		"yargs":   "^1.0.15",
+		"mongodb": "~2.0"
+	}
+}
