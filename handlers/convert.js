@@ -86,7 +86,7 @@ module.exports = function() {
                 function(err, doc) {
                 
                     if(err) {
-                        console.log('insertion error, abort');
+                        console.log('findAndModify error on reput_success, abort');
                         console.log(err);
                         process.exit(1);
                     }
@@ -124,7 +124,7 @@ module.exports = function() {
                 function(err, doc) {
                 
                     if(err) {
-                        console.log('insertion error, abort');
+                        console.log('findAndModify error on reput_fail, abort');
                         console.log(err);
                         process.exit(1);
                     }
