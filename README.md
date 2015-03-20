@@ -39,9 +39,13 @@ Scale horizontally (can run in more than 1 process in many different machines)
     }
 }
 ```
-**type**: the type to match your worker
-**payload.id**: the unique ID for this job. The number of reput attempts is based on this ID.   UUID is preferred.
-**payload.from**: the currency being converted
-**payload.to**: the currency convert to
+__type__: the type to match your worker
 
-6. You can start whatever number of workers as you want. The workers will get their job done independently and load-balanced. Enjoy!
+__payload.id__: the unique ID for this job. The number of reput attempts is based on this ID.   UUID is preferred.
+
+__payload.from__: the currency being converted
+
+__payload.to__: the currency convert to
+
+
+You can start whatever number of workers as you want. The workers will get their job done independently and load-balanced. Enjoy!
