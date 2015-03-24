@@ -90,7 +90,7 @@ Below is an example of a data result:
     "rate" : "15.43"
 }
 ```
-__ _id __:the ID of this data result
+**_id**:the ID of this data result
 
 __id__:the job ID
 
@@ -111,7 +111,7 @@ Below is an example of a job status:
     "fail" : 3
 }
 ```
-__ _id __:the job ID
+**_id**:the job ID
 
 __success__: the total number of succeed attempts
 
