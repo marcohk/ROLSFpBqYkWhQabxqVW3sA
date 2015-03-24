@@ -39,6 +39,7 @@ client
             client.put(0, 0, 60, JSON.stringify([argv.type,job]), function(err, jobid)
             {
                 console.log('queued a string reverse job in ' + argv.tube + ': ' + jobid);
+                client.quit();
             });
         });
     })
