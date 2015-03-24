@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 var argv = require('yargs')
-    .usage('Usage: beanworker --id=[ID] --config=[config.yml] --mongodb=[URI]')
+    .usage('Usage: node currency-worker.js --id [ID] --config [config.yml] --mongodb [URI]')
     .default('id', 'marcohk')
     .default('config', './currency-worker.yml')
     .default('mongodb', 'mongodb://localhost:27017/currency')
