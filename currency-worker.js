@@ -24,3 +24,14 @@ MongoClient.connect("mongodb://localhost:27017/currency", function(err, db) {
 
 });
 
+process.on( 'SIGINT', function() {
+  console.log( "\nGracefully shutting down mongodb from SIGINT (Ctrl-C)" );
+  
+  var db = require('./util/db').database();
+  
+  if(db) {
+    db.close();
+  }
+
+  process.exit( );
+})
