@@ -19,6 +19,7 @@
 	"dependencies": {
 		"cheerio": "~0.18.0",
 		"request": "~2.53.0",
+		"node-uuid": "~1.4.2",
 		"fivebeans": "~1.1.1",
 		"yargs":   "^1.0.15",
 		"mongodb": "~2.0"

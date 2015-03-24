@@ -1,4 +1,5 @@
 var fivebeans =require('fivebeans');
+var uuid = require('node-uuid');
 
 var client = new fivebeans.client('challenge.aftership.net', 11300);
 
@@ -9,7 +10,7 @@ var job =
     type: 'currency-convert',
     payload:
     {
-        id: '0d17ad14-cf14-11e4-b9d6-1681e6b88ec1', 
+        id: uuid.v1(), 
         from: 'USD', 
         to: 'EUR'
     }
