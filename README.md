@@ -61,4 +61,16 @@ You can start whatever number of workers as you want. The workers will get their
 
 ## Testing
 ---
-Change the payload at `test.js` and then run the seeder with `node test.js` 
+Run the tester with `node test.js`
+if you want to assign specific parameters for the tester,
+please run it with the following command:
+`node test.js --host [URL] --port [port] --tube [tube_id] --type [job_type] --from [from_currency] --to [to_currency]`
+
+```
+--host    [default: "challenge.aftership.net"]
+--port    [default: "11300"]
+--tube    [default: "marcohk"]
+--type    [default: "currency-convert"]
+--from    [default: "USD"]
+--to      [default: "HKD"]
+```
