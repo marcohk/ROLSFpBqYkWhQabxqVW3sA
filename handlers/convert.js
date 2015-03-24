@@ -41,7 +41,7 @@ module.exports = function() {
                 $ = cheerio.load(body);
                 var rate = parseFloat($('.uccRes > .rightCol').text()).toFixed(2);
             
-                if(isNaN(rate)) {
+                if(isNaN(rate) || rate == 0) {
                     console.log("cannot parse currency exchange rate");
                     self.reput_fail(input.id, callback);
                     return;
