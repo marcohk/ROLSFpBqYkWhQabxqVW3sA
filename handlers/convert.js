@@ -6,7 +6,7 @@ var url = require("url");
 
 module.exports = function() {
     function CurrencyConverter() {
-        this.type = 'marcohk';
+        this.type = 'currency-convert';
         console.log('CurrencyConverter initiated');
     }
 

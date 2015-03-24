@@ -6,7 +6,7 @@ console.log(Date.now());
 
 var job =
 {
-    type: 'marcohk',
+    type: 'currency-convert',
     payload:
     {
         id: '0d17ad14-cf14-11e4-b9d6-1681e6b88ec1', 
@@ -23,7 +23,7 @@ client
         client.use('marcohk', function(err, tname) {
             console.log("using " + tname);
 
-            client.put(0, 0, 60, JSON.stringify(['marcohk',job]), function(err, jobid)
+            client.put(0, 0, 60, JSON.stringify(['currency-convert',job]), function(err, jobid)
             {
                 console.log('queued a string reverse job in marcohk: ' + jobid);
             });
