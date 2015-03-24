@@ -74,3 +74,44 @@ please run it with the following command:
 --from    [default: "USD"]
 --to      [default: "HKD"]
 ```
+
+## Database Schema
+---
+
+Below is an example of a data result:
+```
+{
+    "_id" : ObjectId("55116c8e0b4d1f500e465c68"),
+    "id" : "45756400-d22d-11e4-8a86-5958edb6b869",
+    "from" : "HKD",
+    "to" : "JPY",
+    "created_at" : 1427205262636,
+    "rate" : "15.43"
+}
+```
+__ _id __:the ID of this data result
+
+__id__:the job ID
+
+__from__: the currency being converted
+
+__to__: the currency convert to
+
+__created_at__: the created time of this data result
+
+__rate__: the currency conversation rate
+
+
+Below is an example of a job status:
+```
+{
+    "_id" : "45756400-d22d-11e4-8a86-5958edb6b869",
+    "success" : 7,
+    "fail" : 3
+}
+```
+__ _id __:the job ID
+
+__success__: the total number of succeed attempts
+
+__fail__: the total number of failed attempts
